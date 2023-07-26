@@ -45,18 +45,25 @@ html, body{
     display: flex;
     flex-direction: column;
     padding: var(--gap) calc(var(--gap)*2);
+    justify-content: space-between;
 }
 
-.display span:first-child{
+.display span#expr{
     font-weight: 600;
     color: var(--enter);
 }
 
-.display span:last-child{
+.display span#output{
     font-size: 45px;
     text-align: right;
     font-weight: 600;
     color: var(--disp-color);
+}
+
+.display #marker{
+    color: var(--enter);
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
 }
 
 .btn{
@@ -134,4 +141,19 @@ html, body{
     padding: calc(var(--gap)*3) calc(var(--gap)*2);
     border-radius: calc(var(--border-radius)*2);
     margin-top: 50px;
+}
+
+@keyframes blink {
+    0% {
+        color: transparent;
+    }
+    48%{
+        color: transparent;
+    }
+    50% {
+        color: var(--enter);
+    }
+    98% {
+        color: var(--enter);
+    }
 }
