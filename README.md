@@ -7,7 +7,7 @@ This is a simple calculator, with minimum mathematical operations, made using va
 
 ## Screenshot
 
-![simple-calc-screenshot.png](https://postimg.cc/87M36zLj)
+![simple-calc-screenshot.png](https://i.postimg.cc/6pmNF73L/simple-calc-screenshot.png)
 
 
 ## Demo
